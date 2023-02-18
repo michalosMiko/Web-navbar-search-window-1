@@ -1,11 +1,26 @@
 import "./Navbar.css"
 import { NavLink } from "react-router-dom"
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react"
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false)
   return <header>
-        <nav>
-        <NavLink to="/" className={ ({isActive}) =>
+        <nav className="navigation">
+
+        <div className="nav-header">
+          <h1 className="logo">MWEBX</h1>
+
+          <button onClick={() => setShowMenu(!showMenu) }>
+          <GiHamburgerMenu className="hamburger-icon"/>
+        </button>
+        </div>
+    
+       
+    <div className={`${showMenu ? "nav-list show" : "nav-list hide"}`}>
+
+    <div className="nav-list">
+    <NavLink to="/" className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
         } >Domů</NavLink>
         
@@ -17,9 +32,17 @@ const Navbar = () => {
     <NavLink to="/serials"  className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
         }>Seriály</NavLink>
-    
+    </div>
+
+    </div>
+
+   
+        
+
         </nav>
         {/* místo na logo nebo img */}
+        
+
   </header>
   
 }

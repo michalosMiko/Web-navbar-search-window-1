@@ -1,19 +1,113 @@
+/*    hlavní div obaluje celou navigaci = ostatní div na flex box, row řádková osa + space-betw rozděl prostor mezi PC*/
 
-
-nav {
-    margin-top: 10px;
-    font-size: 20px;
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+/* div prostoru loga a hamburgeru PC*/
+.nav-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+}
+/* Logo PC*/
+.logo{
+    width: 110px;
+    margin-left: 50px;
+    color: #e5e5e5;
+}
+/* hamburger icon PC  */
+.nav-header button {
+    display: none;
+}
+/*  Položky menu hlavní div PC */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+}
+/*  jednotlivé položky menu PC*/
+.nav-list a {
+   margin-left: 50px;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 20px;
+}
+
 
 /* activeLink link = .Link */
-.link {
-    margin-left: 10px;
+/* .link {
+    
     text-decoration: none;
-}
+        
+} */
+
 
 .activeLink {
     color: #e50914;
 }
 .nonactiveLink {
     color: #e5e5e5;
+}
+
+/* Od 700px a méně = mobil */
+@media (max-width: 700px){
+
+  /* hlavní div lišty mob */
+  .navigation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+  }  
+
+  /* div prostoru loga a hamburgeru mob */
+  .nav-header {
+    width: 100%;
+  }
+
+  /* hamburger btn mob  */
+  .nav-header button {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  /* icona hamburgeru mob */
+  .hamburger-icon {
+    color: #e5e5e5;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .nav-list {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* jednotlivé položky menu mob */
+  .nav-list a {
+    width: 100%;
+    padding: 10px 5px;
+    
+  }
+  /* Clasy pro použití v reactu */
+
+.hide {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.1s linear;
+}
+.show {
+    height: 150px;
+    transition: all 0.1 linear;
+    /* zakomentovat transition */
+    /* background-color: #141414;
+    width: 100%; */
+}
 }
