@@ -1,0 +1,88 @@
+
+
+.vote-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.buttons {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.vote-button1 {
+    background-color: green;
+    color: #e5e5e5;
+    font-size: 18px;
+    border: none;
+    /* border-radius: 5px; */
+    margin-right: 16px;
+    width: 160px;
+    padding: 5px 10px;
+}
+.vote-button2 {
+    background-color: red;
+    color: #e5e5e5;
+    font-size: 18px;
+    border: none;
+    /* border-radius: 5px; */
+    margin-right: 16px;
+    width: 160px;
+    padding: 5px 10px;
+}
+/* malý rámeček grafu */
+svg.recharts-surface {
+    height: 300px;
+    width: 300px;
+    
+}
+tspan {
+    font-size: 15px;
+}
+.pie-chart {
+    stroke: #e50914;
+  }
+  
+  .cell-0 {
+    fill: green;
+  }
+   
+   .cell-1 {
+    fill: #e50914;
+  } 
+  /* .recharts-legend {
+    font-size: 1.2rem;
+    fill: #666;
+  }
+  
+  .recharts-text {
+    font-size: 1.2rem;
+    fill: #666;
+  } */
+  
+.palec-nahoru {
+fill: green;
+}
+
+.palec-dolu {
+margin-top: 20px;
+fill: #e50914;
+}
+/* stylování popisků grafu % */
+  .recharts-text:nth-of-type(1) {
+    /* fill: #e5e5e5 !important; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+   
+  }
+  
+  .recharts-text:nth-of-type(2) {
+    fill: red !important;
+  }

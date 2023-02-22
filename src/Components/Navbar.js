@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react"
 
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return <header>
@@ -14,6 +15,7 @@ const Navbar = () => {
           <button onClick={() => setShowMenu(!showMenu) }>
           <GiHamburgerMenu className="hamburger-icon"/>
         </button>
+       
         </div>
     
        
@@ -26,12 +28,12 @@ const Navbar = () => {
         
     <NavLink to="/movies"  className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
-        }>Filmy</NavLink>
+        }>Produkty</NavLink>
 
 
     <NavLink to="/serials"  className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
-        }>Seriály</NavLink>
+        }>Balíčky</NavLink>
     </div>
 
     </div>

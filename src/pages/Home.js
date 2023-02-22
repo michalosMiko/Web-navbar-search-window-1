@@ -1,8 +1,15 @@
+import Slider from "../Components/Slider"
+import "./Home.css"
+
 
 
 const Home = () => {
   return <section>
-    <h1>Vítejte v Cinematic</h1>
+    
+    
+  
+    <Slider />
+    
   </section>
   
 }

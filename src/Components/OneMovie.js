@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
 import movies from "../data"
 import "./OneMovie.css"
+import VoteComponentas from "./VoteComponentas"
+
 
 // vid 16
 const OneMovie = () => {
@@ -22,7 +24,8 @@ return <section className="one-movie-more">
   <img src={image} alt="" />
   <p>{description}</p>
   <p>{tags}</p>
-  <Link to="/movies">Zpět na všechny filmy</Link>
+  <Link to="/movies">Zpět na všechny produkty</Link>
+  <VoteComponentas />
 </section>
 
 
