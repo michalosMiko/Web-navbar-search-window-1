@@ -16,7 +16,7 @@
 }
 /* Logo PC*/
 .logo{
-    width: 110px;
+    width: 150px;
     margin-left: 50px;
     color: #e5e5e5;
 }
@@ -104,7 +104,7 @@
     transition: all 0.1s linear;
 }
 .show {
-    height: 150px;
+    height: 120px;
     transition: all 0.1 linear;
     /* zakomentovat transition */
     /* background-color: #141414;

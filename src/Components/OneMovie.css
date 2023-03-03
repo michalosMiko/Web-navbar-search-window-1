@@ -4,11 +4,81 @@
     text-align: center;
     padding: 20px;
 }
-
+/* tlačítko zpět na všechny produkty */
 .one-movie-more a{
     text-decoration: none;
     color: #e5e5e5;
     background-color: #e50914;
     padding: 5px 10px;
     font-size: 18px;
+    border-radius: 1px;
+  
 }
+.one-movie-more img {
+  max-width: 90%;
+  height: 450px;
+}
+/* id je zbarveno černě aby nebylo vidět  */
+.id-oneMovie {
+  color: black;
+}
+/* mobil */
+@media (max-width: 700px){
+  .one-movie-more img {
+    max-width: 70%;
+    height: 200px;
+  }
+}
+@media (max-width: 600px){
+  .one-movie-more img {
+    max-width: 70%;
+    height: 180px;
+  }
+}
+@media (max-width: 500px){
+  .one-movie-more img {
+    max-width: 60%;
+    height: 140px;
+  }
+}
+/* .text-to-speech-button {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #e50914;
+  } */
+/* 
+  .description-speech .text-to-speech-button {
+    background-color: blue;
+    color: white;
+  }
+  
+  .director-speech .text-to-speech-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .cast-speech .text-to-speech-button {
+    background-color: red;
+    color: white;
+  } */
+  /* .description-button-style {
+    background-color: blue;
+    color: white;
+  }
+  
+  .director-button-style {
+    background-color: green;
+    color: white;
+  }
+  
+  .cast-button-style {
+    background-color: red;
+    color: white; */
+  /* } */
+  

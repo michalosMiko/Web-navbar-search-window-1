@@ -7,8 +7,8 @@ import "./VoteComponentas.css"
 //               npm install react-icons
 
 function VoteComponentas() {
-  const [upvotes, setUpvotes] = useState(3);
-  const [downvotes, setDownvotes] = useState(2);
+  const [upvotes, setUpvotes] = useState(68);
+  const [downvotes, setDownvotes] = useState(1);
   const [voted, setVoted] = useState(false);
 
   const data = [
@@ -30,6 +30,7 @@ function VoteComponentas() {
 
   return (
     <div className="vote-box">
+      <h2>Celkové hodnocení služby</h2>
       {!voted && (
         <div className="buttons">
           <button className="vote-button1" onClick={handleUpvote}>

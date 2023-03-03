@@ -1,0 +1,33 @@
+
+
+.info-button button {
+    /* display: flex;
+    flex-direction: row; */
+    background-color: #e50914;
+    color: #e5e5e5;
+    font-size: 18px;
+    padding: 5px 20px;
+    width: 210px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.icon-info {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:space-between;
+    align-items: center;
+}
+.icon-info2 {
+   width: 120px;
+   display: flex;
+    flex-direction: row;
+    
+    justify-content:space-between;
+    align-items: center;
+}

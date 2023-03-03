@@ -1,0 +1,51 @@
+/* box textu hodnocení */
+.rating-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+/* lajna hězd a tlačítka submit */
+.submit-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+/* tlačítko hodnocení */
+.submit-button button {
+  background: #e50914;
+  color: #e5e5e5;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 1px;
+  cursor: pointer;
+  width: 210px;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 50px;
+    color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .star.selected {
+    color: gold;
+  }
+  
+  .star:hover:before,
+  .star:hover ~ .star:before {
+    content: '★';
+    position: absolute;
+    color: gold;
+  }
+  

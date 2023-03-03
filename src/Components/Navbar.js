@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className="navigation">
 
         <div className="nav-header">
-          <h1 className="logo">MWEBX</h1>
+          <h1 className="logo">WH-produkt</h1>
 
           <button onClick={() => setShowMenu(!showMenu) }>
           <GiHamburgerMenu className="hamburger-icon"/>
@@ -25,15 +25,21 @@ const Navbar = () => {
     <NavLink to="/" className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
         } >Domů</NavLink>
+
+       
         
     <NavLink to="/movies"  className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
         }>Produkty</NavLink>
 
-
-    <NavLink to="/serials"  className={ ({isActive}) =>
+<NavLink to="/kontakt"  className={ ({isActive}) =>
           isActive ? "activeLink link" :  "nonactiveLink link"
-        }>Balíčky</NavLink>
+        }>Kontakt</NavLink>
+
+
+    {/* <NavLink to="/serials"  className={ ({isActive}) =>
+          isActive ? "activeLink link" :  "nonactiveLink link"
+        }>Balíčky</NavLink> */}
     </div>
 
     </div>

@@ -1,9 +1,9 @@
-import image1 from "./images/karta4.png"
-import image2 from "./images/karta6.png"
-import image3 from "./images/karta5.png"
-import image4 from "./images/mwebBG2.png"
-import image5 from "./images/karta6.png"
-import image6 from "./images/karta4.png"
+import image1 from "./images/divadlo1.png"
+import image2 from "./images/divadlo2.png"
+import image3 from "./images/theater6.png"
+// import image4 from "./images/Theater.png"
+// import image5 from "./images/Theater.png"
+// import image6 from "./images/theater5.png"
 
 
 
@@ -11,52 +11,72 @@ const allMovies = [
     {
         id: 1,
         image: image1,
-        title: "Master",
-        age: "+15",
-        tags: "Credit",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        title: "Brožura a vstupenky",
+        age: "",
+        tags: "",
+        
+        description: "Divadlo poskytuje jedinečnou zábavu, kterou nenabízí žádné jiné umělecké médium. ",
+        Informace: "Divadlo poskytuje jedinečnou zábavu, kterou nenabízí žádné jiné umělecké médium.",
+        directorSpeech: "",
+        castSpeech: ""
+        
     },
     {
         id: 2,
         image: image2,
-        title: "Visa",
-        age: "+18",
-        tags: "Busines",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        title: "Obchodní podmínky",
+        age: "",
+        tags: "",
+       
+        description: "Obchodní podmínky",
+        Informace: "Záruky a reklamace: Zahrnuje podmínky, za kterých může být zboží vráceno, reklamováno nebo vyměněno. Záruka zahrnuje obvykle lhůtu, během níž je zboží chráněno před defekty a vadami. Reklamace může být podána, pokud zboží nedosahuje standardů nebo specifikací, které byly sjednány v objednávce.",
+        directorSpeech: "",
+        castSpeech: ""
     },
     {
         id: 3,
         image: image3,
-        title: "Platební",
-        age: "+16",
-        tags: "Discount",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-    },
-    {
-        id: 4,
-        image: image4,
-        title: "Portfolio",
-        age: "+16",
-        tags: " Napínavý *",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-
-    },
-    {
-        id: 5,
-        image: image5,
-        title: "Club",
-        age: "+16",
-        tags: "Gangster *",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-    },
-    {
-        id: 6,
-        image: image6,
-        title: "Debet",
-        age: "+16",
-        tags: "Rodinný * ",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-    },
+        title: "Další informace",
+        age: "",
+        tags: "",
+        description: "Divadlo může pomoci rozvíjet empatii a porozumění druhým lidem.",
+        Informace: "Divadlo může pomoci rozvíjet empatii a porozumění druhým lidem",
+        directorSpeech: "",
+        castSpeech: " "
+    }
+    // {
+    //     id: 4,
+    //     image: image4,
+    //     title: "Pravidla použití",
+    //     age: "",
+    //     tags: " ",
+    //     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+    //     Informace: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet",
+    //     directorSpeech: "Directed by Paul Thomas Anderson",
+    //     castSpeech: "hhh"
+    // }
+    // {
+    //     id: 5,
+    //     image: image5,
+    //     title: "Club",
+    //     age: "+16",
+    //     tags: "Gangster *",
+    //     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+    //     descriptionSpeech: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet",
+    //     directorSpeech: "Directed by Paul Thomas Anderson",
+    //     castSpeech: "Starring Joaquin Phoenix, Philip Seymo"
+    // },
+    // {
+    //     id: 6,
+    //     image: image6,
+    //     title: "Debet",
+    //     age: "+16",
+    //     tags: "Rodinný * ",
+    //     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+    //     descriptionSpeech: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet",
+    //     directorSpeech: "Directed by Paul Thomas Anderson",
+    //     castSpeech: "Starring Joaquin Phoenix, Philip Seymo"
+    // },
     // {
     //     id: 7,
     //     image: image7,

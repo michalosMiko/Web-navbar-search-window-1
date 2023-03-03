@@ -2,7 +2,8 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Movies from "./pages/Movies" 
-import Serials from "./pages/Serials"  
+import Serials from "./pages/Serials"
+import Kontakt from  "./pages/Kontakt"
 import Error from "./pages/Error"                                                     
 import SharedLayout from "./pages/SharedLayout"
 import OneMovie from "./Components/OneMovie"
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/" element={ <SharedLayout /> } >
     {/* ˇindex kopíruje obalující path="/" */}
       <Route index element={ <Home /> } />
+      <Route path="/kontakt" element={ <Kontakt /> } />
       <Route path="/movies" element={ <Movies /> } />
       <Route path="/serials" element={ <Serials /> } />
       <Route path="/all-movies/:movieId" element={ <OneMovie /> } />

@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .one-movie {
@@ -15,11 +16,13 @@
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    
 
 }
 
 .one-movie img {
-    width: 100%;
+    width: 50%;
+    height: 180px;
 }
 
 .one-movie a {
@@ -28,5 +31,19 @@
     background-color: #e50914;
     padding: 5px 10px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 1px;
+}
+@media (max-width: 700px){
+    .one-movie img {
+        width: 40%;
+        height: 120px;
+    }
+    
+}
+@media (max-width: 600px){
+    .one-movie img {
+        width: 35%;
+        height: 120px;
+    }
+    
 }
